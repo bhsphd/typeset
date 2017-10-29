@@ -17,14 +17,21 @@ body={390pt,530pt},marginparsep=10pt,marginpar=50pt]{geometry}
 
 \hypersetup{bookmarksnumbered=true,bookmarksdepth=2}
 
-\CTEXsetup[number={\thechapter}]{chapter}
-\CTEXsetup[format+={\raggedleft}]{chapter}
-\CTEXsetup[beforeskip={10pt}]{chapter}
-\CTEXsetup[afterskip={30pt}]{chapter}
+% \CTEXsetup[number={\thechapter}]{chapter}
+\ctexset { chapter = { number={\thechapter } } }
+% \CTEXsetup[format+={\raggedleft}]{chapter}
+\ctexset { chapter = { format+={\raggedleft } } }
+% \CTEXsetup[beforeskip={10pt}]{chapter}
+\ctexset { chapter = { beforeskip={10pt} } }
+% \CTEXsetup[afterskip={30pt}]{chapter}
+\ctexset { chapter = { afterskip={30pt} } }
 \def\CTEX@chapter@aftername{\par} % \CTEXsetup[aftername={\par}]{chapter}
-\CTEXsetup[format+={\raggedright}]{section}
-\CTEXsetup[beforeskip={-3.0ex plus -1ex minus -.2ex}]{section}
-\CTEXsetup[afterskip={2.3ex plus .2ex minus 0.2ex}]{section}
+% \CTEXsetup[format+={\raggedright}]{section}
+\ctexset { section = { format+={\raggedright } } }
+% \CTEXsetup[beforeskip={-3.0ex plus -1ex minus -.2ex}]{section}
+\ctexset { section = { beforeskip={-3.0ex plus -1ex minus -.2ex} } }
+% \CTEXsetup[afterskip={2.3ex plus .2ex minus 0.2ex}]{section}
+\ctexset { section = { afterskip={2.3ex plus .2ex minus 0.2ex} } }
 
 \renewcommand \thefigure{\thechapter-\arabic{figure}}
 \renewcommand \thetable{\thechapter-\arabic{table}}
