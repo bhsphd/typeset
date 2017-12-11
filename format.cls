@@ -1,5 +1,8 @@
 \usepackage[centering,paperwidth=180mm,paperheight=230mm,%
 body={390pt,530pt},marginparsep=10pt,marginpar=50pt]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green,CJKbookmarks=True,hidelinks]{hyperref}
 \usepackage{color}
 \usepackage{enumitem}
 \usepackage{fancyvrb}
@@ -17,20 +20,14 @@ body={390pt,530pt},marginparsep=10pt,marginpar=50pt]{geometry}
 
 \hypersetup{bookmarksnumbered=true,bookmarksdepth=2}
 
-% \CTEXsetup[number={\thechapter}]{chapter}
 \ctexset { chapter = { number={\thechapter } } }
-% \CTEXsetup[format+={\raggedleft}]{chapter}
 \ctexset { chapter = { format+={\raggedleft } } }
-% \CTEXsetup[beforeskip={10pt}]{chapter}
 \ctexset { chapter = { beforeskip={10pt} } }
-% \CTEXsetup[afterskip={30pt}]{chapter}
 \ctexset { chapter = { afterskip={30pt} } }
 \def\CTEX@chapter@aftername{\par} % \CTEXsetup[aftername={\par}]{chapter}
-% \CTEXsetup[format+={\raggedright}]{section}
 \ctexset { section = { format+={\raggedright } } }
-% \CTEXsetup[beforeskip={-3.0ex plus -1ex minus -.2ex}]{section}
-\ctexset { section = { beforeskip={-3.0ex plus -1ex minus -.2ex} } }
-% \CTEXsetup[afterskip={2.3ex plus .2ex minus 0.2ex}]{section}
+% \ctexset { section = { beforeskip={-3.0ex plus -1ex minus -.2ex} } }
+\ctexset { section = { beforeskip={3.0ex plus 1ex minus .2ex} } }
 \ctexset { section = { afterskip={2.3ex plus .2ex minus 0.2ex} } }
 
 \renewcommand \thefigure{\thechapter-\arabic{figure}}
@@ -63,7 +60,7 @@ body={390pt,530pt},marginparsep=10pt,marginpar=50pt]{geometry}
 %\setmainfont{TeX Gyre Pagella}
 \newfontfamily\urlfont{PT Sans Narrow}
 %\setmonofont[AutoFakeBold=1.6,AutoFakeSlant=0.17,Mapping=tex-text-tt]{Inconsolata}
-\setCJKfamilyfont{zhyou}{YouYuan}
+% \setCJKfamilyfont{zhyou}{YouYuan}
 
 \newcommand{\fn}[1]{\texttt{#1}}
 \newcommand{\sfn}[1]{\texttt{\small #1}}
