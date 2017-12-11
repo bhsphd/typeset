@@ -62,7 +62,6 @@ pdftk book.pdf cat 19-46 output chap1.pdf       # 第1章
 pdftk book.pdf cat 577-end output appendix.pdf  # 附录
 \end{Code}
 
-
 \section{PDF页码编号}
 
 \LaTeX 的 \fn{hyperref} 宏包可以为生成的PDF设置“逻辑页码”，
@@ -76,7 +75,6 @@ pagenum.groovy '1e,3r' preamble.pdf  # 第1、2页是封面，没有页码；第
 pagenum.groovy '1n3'   chap1.pdf     # 第1章第1页的逻辑页码是3
 pagenum.groovy '1n561' appendix.pdf  # 附录第1页的逻辑页码是561
 \end{Code}
-
 
 \section{PDF剪裁（crop）}
 \label{sec:pdfcrop}
@@ -103,7 +101,6 @@ pagenum.groovy '1n561' appendix.pdf  # 附录第1页的逻辑页码是561
 \myenddot
 
 %\subsection
-
 
 \section{PDF拼接（two-up）}
 有时候想在宽屏上同时阅读左右两页的书稿，除了可以用PDF阅读器本身的多页显示功能，
